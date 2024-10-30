@@ -13,16 +13,14 @@ export default function Footer() {
     {
       title: "Company",
       links: [
-        { name: "About Us", href: "/about" },
+        { name: "About Us", href: "/" },
         { name: "Careers", href: "/" },
-        { name: "Press", href: "/" },
       ],
     },
     {
       title: "Services",
       links: [
         { name: "Consulting", href: "/" },
-        { name: "Development", href: "/" },
         { name: "Design", href: "/" },
       ],
     },
@@ -34,32 +32,31 @@ export default function Footer() {
         // { name: 'FAQ', href: '#' }
       ],
     },
-    {
-      title: "Technologies",
-      links: [
-        { name: "Blog", href: "/blogs" },
-        { name: "Guides", href: "/" },
-        // { name: 'Newsletter', href: '#' }
-      ],
-    },
+    // {
+    //   title: "Technologies",
+    //   links: [
+    //     { name: "Blog", href: "/blogs" },
+    //     { name: "Guides", href: "/" },
+    //     // { name: 'Newsletter', href: '#' }
+    //   ],
+    // },
     {
         title: 'Reference',
         links: [
             { name: 'Privacy Policy', href: '#' },
             { name: 'Terms of Service', href: '#' },
-            { name: 'Cookie Policy', href: '#' }
         ]
     }
   ];
 
   return (
-    <footer className="bg-gray-700 text-white px-8 py-4 md:px-14 w-full h-auto z-0">
-      <div className="max-w-7xl mx-auto lg:px-8">
+    <footer className="bg-black text-white position-fixed bottom-0 px-8 py-4 md:px-14 w-full h-auto z-0">
+      <div className="max-w-7xl mx-auto lg:px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                     {sections.map((section, index) => (
                         <div key={index} className="flex flex-col">
                             <button
-                                className="text-xl md:text-2xl font-poppins font-bold my-4 flex justify-between items-center w-full sm:w-auto"
+                                className="text-xl md:text-2xl font-poppins font-bold my-2 flex justify-between items-center w-full sm:w-auto"
                                 onClick={() => handleToggle(index)}
                             >
                                 {section.title}
@@ -77,11 +74,11 @@ export default function Footer() {
                 </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center">
           <p className="text-white font-thin mt-4">
-            &copy; 2024 MyCTO Innovations . All rights reserved.
+            &copy; DATSUN . All rights reserved.
           </p>
           <div className="w-auto gap-2 flex flex-row text-2xl justify-between mt-4">
             <a
-              href="https://www.linkedin.com/company/mycto-innovations/"
+              href="https://www.linkedin.com/company/nissan-motor-corporation/"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-white border-solid rounded-full w-10 h-10 flex justify-center items-center"
@@ -89,7 +86,7 @@ export default function Footer() {
               <FaLinkedin />
             </a>
             <a
-              href="https://www.instagram.com/my_cto/"
+              href="https://www.instagram.com/nissan_india/"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-white border-solid rounded-full w-10 h-10 flex justify-center items-center"
@@ -97,7 +94,7 @@ export default function Footer() {
               <FaInstagramSquare />
             </a>
             <a
-              href="https://www.facebook.com/myctoinnovations"
+              href="https://www.facebook.com/nissanindia/"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-white border-solid rounded-full w-10 h-10 flex justify-center items-center"
